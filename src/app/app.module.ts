@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { AuthService } from './services/auth.service';
 import { BookService } from './services/book.service';
 import { AuthGuardService } from './services/auth-guard.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,11 @@ import { AuthGuardService } from './services/auth-guard.service';
     BookFormComponent,
     HeaderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+     AppRoutingModule,
+     ReactiveFormsModule,
+    ],
   providers: [AuthService, BookService, AuthGuardService],
   bootstrap: [AppComponent],
 })
