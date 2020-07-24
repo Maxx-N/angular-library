@@ -1,1 +1,33 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="navbar-brand" routerLinkActive="active">
+    <a routerLink="books">Livres</a>
+  </div>
+
+  <div class="dropdown show nav navbar-nav ml-auto">
+    <a
+      class="btn btn-primary dropdown-toggle"
+      role="button"
+      id="dropdownMenuLink"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      Utilisateur
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a
+        class="dropdown-item"
+        routerLink="auth/signin"
+        routerLinkActive="active"
+        >Se connecter</a
+      >
+      <a
+        class="dropdown-item"
+        routerLink="auth/signup"
+        routerLinkActive="active"
+        >Créer un compte</a
+      >
+    </div>
+  </div>
+</nav>
